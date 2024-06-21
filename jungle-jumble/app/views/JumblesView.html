@@ -1,0 +1,67 @@
+<section class="container">
+  <div class="row">
+    <div class="col-4 bg-light" id="header-text">
+      <h1 class="text-center py-2 fw-bold">Jungle Jumble</h1>
+    </div>
+  </div>
+  <div class="row justify-content-between">
+    <div class="col-7">
+      <div id="jumbleCard" class="row">
+        <!-- <div class="col-12 jumble-card bg-light">
+          <div class="d-flex justify-content-between">
+            <h3>Easy Jumble</h3>
+            <h3>Fastest Time:</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa enim quam et ipsam, quis a natus
+            maiores autem? Deleniti explicabo cupiditate maiores provident esse voluptas et repellat corrupti autem.</p>
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 d-grid gap-2 jumble-card py-3 bg-light">
+              <textarea name="body" class="jumbleText" id="jumbleBody" rows="9"></textarea>
+              <button class="btn btn-info text-light">Submit!!</button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="col-4 border border-2 rounded border-dark bg-light">
+      <div class="row">
+        <div class="col-12 mt-3">
+          <h3 class="text-center">Jumbles!</h3>
+        </div>
+        <div id="jumbleSelect" class="row"></div>
+        <!-- <div class="col-12 d-flex justify-content-around align-items-center mb-2">
+          <button class="btn btn-warning rounded-pill">start</button>
+          <h5 class="mb-1">Easy Jumble</h5>
+          <p class="mb-1"><i class="mdi mdi-timer"></i>
+            time</p>
+          <p class="mb-1">wpm</p>
+        </div>
+        <div class="col-12 d-flex justify-content-around align-items-center mb-2">
+          <button class="btn btn-warning rounded-pill">start</button>
+          <h5 class="mb-1">Easy Jumble</h5>
+          <p class="mb-1"><i class="mdi mdi-timer"></i>
+            time</p>
+          <p class="mb-1">wpm</p>
+        </div>
+      </div> -->
+        <div class="col-12 pt-5">
+          <form onsubmit="app.JumblesController.drawWords()">
+            <h6 class="text-center fw-bold">Create Jumble</h6>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Name</span>
+              <input type="text" name="name" class="form-control" />
+            </div>
+            <div class="input-group">
+              <textarea class="jumbleText" name="body" id="submitTextArea" rows="5"></textarea>
+            </div>
+            <div class="d-grid mt-2 mb-5">
+              <button type="submit" class="btn btn-warning">Create Salad <i class="mdi mdi-plus"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
